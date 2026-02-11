@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OptiStore - Tutoriales</title>
+  <meta name="description" content="Tutoriales y solucion de problemas de OptiStore." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-tutorials">
+  <header class="site-header" id="top">
+    <a class="logo" href="index.html" aria-label="Inicio OptiStore">OptiStore</a>
+
+    <nav class="main-nav" aria-label="Navegacion principal">
+      <a href="products.html">Productos</a>
+      <a href="index.html">Inicio</a>
+      <a href="https://discord.gg/TxYTuXcmhQ" target="_blank" rel="noopener">Soporte</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="tutorial-link" href="tutorials.html" aria-current="page">Tutoriales</a>
+      <button class="icon-cart" type="button" data-cart-toggle aria-label="Abrir carrito de compras">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 7h10l-1 10H8L7 7Z" />
+          <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+        </svg>
+        <span class="cart-badge is-empty" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="tutorial-main">
+    <section class="tutorial-shell">
+      <header class="tutorial-header">
+        <h1>Tutoriales</h1>
+        <p>Solucion de problemas y guias</p>
+      </header>
+
+      <article class="tutorial-block">
+        <h2>Netflix</h2>
+        <h3>Error de codigo 2FA por correo</h3>
+        <p>
+          Si ves el mensaje "Introduce el codigo que enviamos a tu correo" al iniciar sesion,
+          usa la opcion <strong>Obtener ayuda</strong> y luego selecciona <strong>Iniciar con contrasena</strong>.
+        </p>
+        <div class="tutorial-shot tutorial-shot-netflix">
+          <span>Referencia Netflix</span>
+        </div>
+        <p>
+          Este flujo evita el bloqueo temporal del codigo y permite entrar con la credencial principal.
+        </p>
+        <p class="tutorial-help">
+          Si la cuenta sigue fallando, abre ticket en Discord en el canal de reemplazos.
+        </p>
+      </article>
+
+      <article class="tutorial-block">
+        <h2>CapCut</h2>
+        <h3>Error "Numero maximo de intentos alcanzado"</h3>
+        <p>
+          Este error no siempre significa que la cuenta este mala. Generalmente indica limite de intentos,
+          bloqueo por IP o restriccion temporal del dispositivo.
+        </p>
+        <div class="tutorial-shot tutorial-shot-capcut">
+          <span>Referencia CapCut</span>
+        </div>
+        <ul>
+          <li>Puede no funcionar en la app movil.</li>
+          <li>Prueba iniciar desde navegador web: https://www.capcut.com/login</li>
+          <li>Si persiste, espera unos minutos y vuelve a intentar.</li>
+        </ul>
+      </article>
+
+      <article class="tutorial-block">
+        <h2>Nitro Promo Code</h2>
+        <h3>Requisitos importantes</h3>
+        <p>
+          Debes agregar un metodo de pago (tarjeta) para canjear el codigo. Discord lo pide para verificar la suscripcion.
+        </p>
+        <h3>Elegibilidad (solo usuarios nuevos)</h3>
+        <p>
+          El codigo Nitro solo funciona si no tuviste Nitro en los ultimos 12 meses.
+        </p>
+        <ul>
+          <li>Si usaste Nitro recientemente, el codigo no aplicara.</li>
+          <li>Verifica tu region y el tipo de promocion antes de reclamar.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer-support">
+    <div class="footer-grid">
+      <section>
+        <h4 class="footer-logo">OptiStore</h4>
+        <p>Tu marketplace digital diario. Tu fuente numero uno para productos digitales.</p>
+      </section>
+      <section>
+        <h5>Tienda</h5>
+        <a href="products.html">Todos los productos</a>
+      </section>
+      <section>
+        <h5>Aviso legal</h5>
+        <a href="#">Terminos del servicio</a>
+        <a href="#">Politica de privacidad</a>
+      </section>
+      <section>
+        <h5>Soporte</h5>
+        <a href="tutorials.html">Tutoriales</a>
+        <a href="https://discord.gg/TxYTuXcmhQ" target="_blank" rel="noopener">Comunidad Discord</a>
+        <a href="mailto:dancardav@gmail.com">dancardav@gmail.com</a>
+      </section>
+    </div>
+    <div class="footer-bottom">&copy; 2026 OptiStore. Todos los derechos reservados.</div>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="cart-drawer-head">
+      <div>
+        <h3>Carrito de compras</h3>
+        <p data-cart-sub>0 articulos</p>
+      </div>
+      <strong class="drawer-total is-hidden" data-cart-total>0,00 €</strong>
+    </div>
+
+    <div class="cart-items" data-cart-items></div>
+
+    <a class="checkout-btn" href="checkout.html">Continuar al pago <span aria-hidden="true">-></span></a>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

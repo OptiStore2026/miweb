@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OptiStore</title>
+  <meta name="description" content="Marketplace digital premium de OptiStore." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-home">
+  <header class="site-header" id="top">
+    <a class="logo" href="index.html" aria-label="Inicio OptiStore">OptiStore</a>
+
+    <nav class="main-nav" aria-label="Navegacion principal">
+      <a href="products.html">Productos</a>
+      <a href="#top">Inicio</a>
+      <a href="https://discord.gg/TxYTuXcmhQ" target="_blank" rel="noopener">Soporte</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="tutorial-link" href="tutorials.html">Tutoriales</a>
+      <button class="icon-cart" type="button" data-cart-toggle aria-label="Abrir carrito de compras">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 7h10l-1 10H8L7 7Z" />
+          <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+        </svg>
+        <span class="cart-badge is-empty" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-home">
+      <div class="hero-storm" aria-hidden="true">
+        <span class="storm-lines storm-out"></span>
+        <span class="storm-lines storm-in"></span>
+        <span class="storm-blackout"></span>
+      </div>
+      <p class="hero-mark" aria-hidden="true">OptiStore</p>
+      <div class="hero-inner">
+        <h1>Bienvenido al<br />Futuro de las Compras.</h1>
+        <p>
+          Descubre una seleccion curada de productos digitales para mejorar tu
+          dia a dia. Compra ahora y siente la diferencia.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="products.html">Explorar productos</a>
+          <a class="btn btn-text" href="https://discord.gg/TxYTuXcmhQ" target="_blank" rel="noopener">Unirme a la comunidad <span aria-hidden="true">></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer-support">
+    <div class="footer-grid">
+      <section>
+        <h4 class="footer-logo">OptiStore</h4>
+        <p>Tu marketplace digital diario. Tu fuente numero uno para productos digitales.</p>
+      </section>
+      <section>
+        <h5>Tienda</h5>
+        <a href="products.html">Todos los productos</a>
+      </section>
+      <section>
+        <h5>Aviso legal</h5>
+        <a href="#">Terminos del servicio</a>
+        <a href="#">Politica de privacidad</a>
+      </section>
+      <section>
+        <h5>Soporte</h5>
+        <a href="tutorials.html">Tutoriales</a>
+        <a href="https://discord.gg/TxYTuXcmhQ" target="_blank" rel="noopener">Comunidad Discord</a>
+        <a href="mailto:dancardav@gmail.com">dancardav@gmail.com</a>
+      </section>
+    </div>
+    <div class="footer-bottom">&copy; 2026 OptiStore. Todos los derechos reservados.</div>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="cart-drawer-head">
+      <div>
+        <h3>Carrito de compras</h3>
+        <p data-cart-sub>0 articulos</p>
+      </div>
+      <strong class="drawer-total is-hidden" data-cart-total>0,00 €</strong>
+    </div>
+
+    <div class="cart-items" data-cart-items></div>
+
+    <a class="checkout-btn" href="checkout.html">Continuar al pago <span aria-hidden="true">-></span></a>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

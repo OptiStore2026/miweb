@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OptiStore - Producto</title>
+  <meta name="description" content="Detalle de producto en OptiStore." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-detail">
+  <header class="site-header" id="top">
+    <a class="logo" href="index.html" aria-label="Inicio OptiStore">OptiStore</a>
+
+    <nav class="main-nav" aria-label="Navegacion principal">
+      <a href="products.html">Productos</a>
+      <a href="index.html">Inicio</a>
+      <a href="https://discord.gg/TxYTuXcmhQ" target="_blank" rel="noopener">Soporte</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="tutorial-link" href="tutorials.html">Tutoriales</a>
+      <button class="icon-cart" type="button" data-cart-toggle aria-label="Abrir carrito de compras">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 7h10l-1 10H8L7 7Z" />
+          <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+        </svg>
+        <span class="cart-badge is-empty" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="catalog-page detail-page">
+    <section class="catalog-layout detail-layout">
+      <aside class="catalog-sidebar detail-sidebar">
+        <label class="search-box" aria-label="Buscar productos">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+          </svg>
+          <input type="search" placeholder="Buscar un producto..." />
+        </label>
+
+        <div class="sidebar-divider"></div>
+
+        <section class="detail-sidebar-group">
+          <h3>STREAMING</h3>
+          <ul class="stream-list stream-list-detail">
+            <li><a class="stream-item" href="products.html"><span class="service-dot"></span>Todos los productos</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-netflix"></span>Netflix</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-disney"></span>Disney</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-plex"></span>PlexTV</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-pureflix"></span>Pureflix</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-crunchyroll"></span>Crunchyroll</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-youtube"></span>YouTube Premium</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-spotify"></span>Spotify</a></li>
+          </ul>
+        </section>
+
+        <section class="detail-sidebar-group">
+          <h3>GAMING</h3>
+          <ul class="stream-list stream-list-detail">
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-nba"></span>Fortnite</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-dazn"></span>Epic Games</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-prime"></span>Steam</a></li>
+          </ul>
+        </section>
+
+        <section class="detail-sidebar-group">
+          <h3>OTROS</h3>
+          <ul class="stream-list stream-list-detail">
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-filmora"></span>Filmora</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-hbo"></span>HboMax</a></li>
+            <li><a class="stream-item" href="products.html"><span class="service-dot is-eleven"></span>Eleven Sports</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="detail-content">
+        <article class="detail-hero-card">
+          <div class="detail-image" data-detail-image></div>
+          <div class="detail-hero-copy">
+            <span class="detail-tag">Mejor valor</span>
+            <h1 data-detail-title>Titulo del producto</h1>
+            <p class="detail-price" data-detail-price>0,00 €</p>
+            <h3>Descripcion</h3>
+            <p data-detail-description>Entrega instantanea y soporte incluido.</p>
+          </div>
+        </article>
+
+        <section class="detail-benefits">
+          <article class="detail-benefit-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline>
+            </svg>
+            <h4>Entrega instantanea</h4>
+            <p>Recibe tu producto en segundos.</p>
+          </article>
+          <article class="detail-benefit-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2l7 3v6c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5l7-3z"></path>
+            </svg>
+            <h4>Pago seguro</h4>
+            <p>Metodos confiables y soporte real.</p>
+          </article>
+          <article class="detail-benefit-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"></path>
+              <path d="M6 22v-2a6 6 0 0 1 12 0v2"></path>
+            </svg>
+            <h4>Confiable</h4>
+            <p>Miles de clientes satisfechos.</p>
+          </article>
+        </section>
+
+        <section class="detail-specs">
+          <h2>Detalles del producto</h2>
+          <div class="detail-spec-grid">
+            <div>
+              <span>Categoria</span>
+              <strong data-detail-category>-</strong>
+            </div>
+            <div>
+              <span>SKU</span>
+              <strong data-detail-sku>-</strong>
+            </div>
+            <div>
+              <span>Stock</span>
+              <strong data-detail-stock>-</strong>
+            </div>
+            <div>
+              <span>Entrega</span>
+              <strong>Digital instantanea</strong>
+            </div>
+            <div>
+              <span>Region</span>
+              <strong>Global</strong>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="detail-purchase">
+        <h2>Este producto</h2>
+
+        <section class="detail-purchase-card">
+          <h3>Detalles del producto</h3>
+          <article class="detail-summary-row">
+            <div class="detail-summary-thumb" data-summary-image></div>
+            <div class="detail-summary-copy">
+              <p data-summary-title>Producto</p>
+              <span>Cantidad: <span data-summary-qty>1</span></span>
+            </div>
+            <strong data-summary-line>0,00 €</strong>
+          </article>
+
+          <div class="detail-summary-lines">
+            <div>
+              <span>Subtotal</span>
+              <strong data-summary-subtotal>0,00 €</strong>
+            </div>
+            <div>
+              <span>Impuestos</span>
+              <strong>0,00 €</strong>
+            </div>
+            <div class="is-total">
+              <span>Total</span>
+              <strong data-summary-total>0,00 €</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-secure-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2l7 3v6c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5l7-3z"></path>
+          </svg>
+          <span>Compra segura con cifrado SSL de 256 bits</span>
+        </section>
+
+        <section class="detail-qty-card">
+          <h3>Cantidad</h3>
+          <div class="qty-control">
+            <button type="button" data-detail-minus>-</button>
+            <input type="number" min="1" value="1" data-detail-qty />
+            <button type="button" data-detail-plus>+</button>
+          </div>
+        </section>
+
+        <button class="btn btn-light detail-add-btn" type="button" data-add-to-cart data-detail-add data-label="Agregar al carrito">Agregar al carrito</button>
+        <a class="btn btn-text detail-checkout-link" href="checkout.html">Comprar ahora</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer-support">
+    <div class="footer-grid">
+      <section>
+        <h4 class="footer-logo">OptiStore</h4>
+        <p>Tu marketplace digital diario. Tu fuente numero uno para productos digitales.</p>
+      </section>
+      <section>
+        <h5>Tienda</h5>
+        <a href="products.html">Todos los productos</a>
+      </section>
+      <section>
+        <h5>Aviso legal</h5>
+        <a href="#">Terminos del servicio</a>
+        <a href="#">Politica de privacidad</a>
+      </section>
+      <section>
+        <h5>Soporte</h5>
+        <a href="tutorials.html">Tutoriales</a>
+        <a href="https://discord.gg/TxYTuXcmhQ" target="_blank" rel="noopener">Comunidad Discord</a>
+        <a href="mailto:dancardav@gmail.com">dancardav@gmail.com</a>
+      </section>
+    </div>
+    <div class="footer-bottom">&copy; 2026 OptiStore. Todos los derechos reservados.</div>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer>
+    <div class="cart-drawer-head">
+      <div>
+        <h3>Carrito de compras</h3>
+        <p data-cart-sub>0 articulos</p>
+      </div>
+      <strong class="drawer-total is-hidden" data-cart-total>0,00 €</strong>
+    </div>
+
+    <div class="cart-items" data-cart-items></div>
+
+    <a class="checkout-btn" href="checkout.html">Continuar al pago <span aria-hidden="true">-></span></a>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
